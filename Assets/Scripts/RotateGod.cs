@@ -7,15 +7,12 @@ public class RotateGod : MonoBehaviour
 {
     private bool activo = false;
     private void OnTriggerEnter(Collider other)
-    {
-        
-
+    {       
         if (other.gameObject.name == "FPSController")
         {
             activo = true;
 
-        }
-        
+        } 
     }
 
     private void OnTriggerExit(Collider other)
@@ -30,7 +27,6 @@ public class RotateGod : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.R) && activo)
         {
-            
             transform.Rotate(Vector3.forward * 2);
         }
     }

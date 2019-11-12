@@ -21,7 +21,8 @@ public class BookCollision : MonoBehaviour
 
         if (other.gameObject.name == "Projectile(Clone)" || other.gameObject.name == "FPSController")
         {
-            gameObject.transform.localScale = new Vector3(gameObject.transform.localScale.x / 2, gameObject.transform.localScale.y / 2, gameObject.transform.localScale.z / 2);
+            //gameObject.transform.localScale = new Vector3(gameObject.transform.localScale.x / 2, gameObject.transform.localScale.y / 2, gameObject.transform.localScale.z / 2);
+            gameObject.transform.localScale /= 2;
         }
     }
 

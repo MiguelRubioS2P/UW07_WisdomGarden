@@ -6346,6 +6346,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate
       objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 15c052f18ffecc149bcdecac436fe993, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 15c052f18ffecc149bcdecac436fe993, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.654
@@ -11984,6 +11988,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1557146667}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1564419444 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1646438655024674, guid: 8d55ec0e96e52ba459950896cbe6f1e4,
+    type: 3}
+  m_PrefabInstance: {fileID: 2100202283}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1564419448
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1564419444}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.8241463, y: 5.6158676, z: 1.4323075}
+  m_Center: {x: 0, y: 0, z: -0.00000035762787}
 --- !u!1 &1568826508
 GameObject:
   m_ObjectHideFlags: 0
