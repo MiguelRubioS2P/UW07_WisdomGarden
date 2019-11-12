@@ -12,6 +12,7 @@ public class TpCylinder : MonoBehaviour
     
     private void OnTriggerStay(Collider other)
     {
+        //other.gameObject.SetActive(false);
         if (other.gameObject.name == "FPSController")
         {
             posicionCilindroEntrada = new Vector3(transform.position.x, transform.position.y, transform.position.z);
