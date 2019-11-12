@@ -11,7 +11,6 @@ public class RotateGod : MonoBehaviour
         if (other.gameObject.name == "FPSController")
         {
             activo = true;
-
         } 
     }
 

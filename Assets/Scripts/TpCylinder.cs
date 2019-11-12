@@ -9,6 +9,7 @@ public class TpCylinder : MonoBehaviour
     private Vector3 posicionCilindroEntrada;
     private bool dentro = false;
     
+    
     private void OnTriggerStay(Collider other)
     {
         if (other.gameObject.name == "FPSController")
@@ -16,7 +17,7 @@ public class TpCylinder : MonoBehaviour
             posicionCilindroEntrada = new Vector3(transform.position.x, transform.position.y, transform.position.z);
             dentro = true;
             other.gameObject.transform.position = posicionCilindroSalida;
-
+            
         }
     }
 
@@ -25,6 +26,8 @@ public class TpCylinder : MonoBehaviour
         if(other.gameObject.name == "FPSController")
         {
             dentro = false;
+            //other.gameObject.transform.position = posicionCilindroSalida;
+            //Destroy(other.gameObject);
         }
     }
 
